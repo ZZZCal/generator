@@ -9,10 +9,13 @@
 ---- THEORY OF STRUCTURE GENERATION ----
 
 !! book: Modern methods of crystal structure prediction. Chapter 1: Periodic-Graph Approaches in Crystal Structure Prediction
+(Chapter 7: Crystal Structure Prediction Using Evolutionary Approach)
 
 -- oganov2006crystal
 J Chem Phys DOI: 10.1063/1.2210932
 Crystal structure prediction using ab initio evolutionary techniques: Principles and applications
+(Application: predict the most stable crystal structure and a number of low-energy metastable structures for a given compound at any P-T conditions)
+Code is provided in a website, algorithm is introduced)
 (not sure about these two artilcles related or not) -- ** different approach to crystal structure prediction, perhaps less useful for our purpose.
 
 ** eon2010euclidian
@@ -23,6 +26,7 @@ Eon formally demonstrated that one can obtain a unique representation of a net w
 DOI: 10.1038/NCHEM.1192
 Large-scale screening of hypothetical metal–organic frameworks
 Parameter dependent, leads to similar topologies
+Generating hypothetical MOFs by recombining building blocks from already synthesized MOFs. (A updation method of already experimetally existing MOFs)
 Algorithm is outlined
 
 martin2014construction
@@ -32,34 +36,38 @@ Construction and Characterization of Structure Models of Crystalline Porous Poly
 (2) assembly the structure models: interpreting the net, aligning the buidling blocks, assembling the framework with net-based or connectino based, collision detection.
 (3) characterization: Zeo++ Voronoi decomposition to translate structural information [atom postions, unit cell shapes] into a periodic graph representation of the spaces between atoms and their connectivity. [a map of the material's void space]
 (4) net is to specific, can't acheive all possible structures.
+The method is provided by Zeo++ software.
 
 !! boyd2016generalized
 CrystEngComm DOI: 10.1039/c6ce00407e
 A generalized method for constructing hypothetical nanoporous materials of any net topology from graph theory
 Content:
 (1) Method for constructing hypothetical crystalline nanoporous materials[MOFs]: secondary building units with defined connection points + desired 3D net topolygy with labelled quotient graph.
-(2) algorithm provided: underlying net (from RCSR) + buidling units (implementation section is useful). 
+(2) algorithm provided: underlying net (from RCSR) + buidling units. 
 (3) code provided
 
 !! colon2017topologically
 Crystal Growth & Design DOI: 10.1021/acs.cgd.7b00848
 Topologically Guided, Automated Construction of Metal–Organic Frameworks and Their Evaluation for Energy-Related Applications
-(1) a computational algorithm and code to generate MOFs based on edge-transitive topological nets for subsequent evaluation via molecular simulation
+(1) a computational algorithm and code to generate MOFs based on edge-transitive topological nets for subsequent evaluation via molecular simulation[ToBaCCo 1.0]
 (2) input topological blueprints + building blocks
 (3) topological blueprints: information about unit cell parameters, positions of the net nodes and edges, coordination and symmetry of the nodes. [41 edge-transitive nets to construct 13512 MOFs]
 (4) building blocks - building blocks placement - connectivity information - running through library
 (5) Structure optimization - adsorption simulation with gas - other properties like surface area, void fractions, heats of adsorption.
 
-** create a full citation.
-Updated this algorithm in: DOI: 10.1039/C8CE01637B (Increasing topological diversity during computational “synthesis” of porous crystals: how and why)
+!! Anderson2019Increasing
+Crystal Growth & Design DOI: 10.1039/C8CE01637B
+Increasing topological diversity during computational “synthesis” of porous crystals: how and why
+Updated the ToBaCCO code to version 3.0
 
 !! lan2017material
 NATURE COMMUNICATIONS DOI: 10.1038/s41467-018-07720-x
 Materials genomics methods for high-throughput construction of COFs and targeted synthesis
 Content:
-(1) high-throughput construction of COFs based on materials genomics strategy, a gene partition method of genetic structural units with reactive sites and quasi-reactive assembly algorithms (QReaxAA) for structure generation were proposed.
+(1) high-throughput construction of COFs based on materials genomics strategy, a gene partition method of genetic structural units with reactive sites and quasi-reactive assembly algorithms (QReaxAA) highthroughput construction were proposed.
 (2) construction methods for 2D COFs with a self-adaption algorithm.
 (3) algorithm flowchart and library used provided.
+Use Zeo++ to generate MOF structures.
 
 chen2020reticular
 Chem Rev DOI: 10.1021/acs.chemrev.9b00648 
@@ -157,7 +165,9 @@ Content:
 (3) very brief review of how to create 2D polymer structures from 2D nets: RCSR database + Cx symmetry monomers + linkers [no detailed algorithm]
  
 
----- CODES/RESOURCES ----
+
+
+---- CODE ----
 
 I think here I collected almost all algorithm that we can use uptill now, there are four kinds of codes
 
@@ -167,12 +177,14 @@ TOBUNPOROUS: a code written to: (i) replace each Si centre with a Zn ion; (ii) r
 
 TopoFF: keupp2018topoff
 
-lan2017material?
-
 ToBaCCo code
 Zeo++ software
 QReaxAA
 
-http://epinet.anu.edu.au/  --- project explores 2D hyperbolic (H²) tilings as a source of crystalline frameworks (or networks) in 3D euclidean (E³) space. Our aim is to enumerate networks with a broad spectrum of properties that are of possible interest to geometers, structural chemists, and statistical physicists.
+lan2017material?
 
-https://topospro.com/software/
+
+
+
+
+
