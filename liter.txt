@@ -181,9 +181,36 @@ ToBaCCo code
 Zeo++ software
 QReaxAA
 
-lan2017material?
+Application by the code:
+-- ToBaCCo code:
+13512 MOFs + hydrogen storage, methane storage, Xe/Kr separation(DOI: 10.1021/acs.cgd.7b00848)
+simulated adsorption, mechanical properties(DOI: 10.1039/C8CE01637B)
+18 000+ MOFs + hydrogen storage capabilities with neural network(DOI: 10.1021/acs.jpcc.8b09420)
+50000 experimental MOFs + hydrogen deliverable capacity(DOI: 10.1039/c8me00050f)
+electrostatic interactions(DOI: 10.1021/acs.jctc.7b00841)
+design smart MOFs for methane storage(DOI: 10.1039/c9me00072k)
+predicting adsorption isotherms(DOI: 10.1021/acs.jctc.9b00940)
 
+-- Zeo++
+Related to zeolite and porous structure: gas separation, adsorption
 
+A realated book
+Modern Methods of Crystal Structure Prediction
+1. Periodic-Graph Approaches in Crystal Structure Prediction
+2. Energy Landscapes and Structure Prediction Using Basin-Hopping
+3. Random Search Methods
+4. Predicting Solid Compounds Using Simulated Annealing
+5. Simulation of Structural Phase Transitions in Crystals: The Metadynamics Approach6. Global Optimization with the Minima Hopping Method
+7. Crystal Structure Prediction Using Evolutionary Approach
+
+Application 
+1. Design MOFs and taxonomy of them(DOI: 10.1021/ar020022l)
+2. Embedding(DOI: 10.1016/j.jssc.2005.06.037)
+3. wave propagation in thin structure(DOI: 10.1088/0959-7174/12/4/201)
+4. High-symmetry embeddings of interpenetrating periodic nets(DOI: 10.1107/S2053273314019950)
+5. two-dimensional arrays for free-radical benzenoid hydrocarbons(DOI: 10.1021/ci000005f)
+6.design microstructures of two-phase composites with extremal electromagnetic permeability and permittivity(DOI: 10.1007/s00158-012-0766-8)
+7. topological optimization
 
 
 
