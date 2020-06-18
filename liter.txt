@@ -6,6 +6,15 @@
 
 =========================
 
+Idea:
+Build a 2D conjugated polymer generator
+
+Steps:
+1. periodic graph or net(alreadly database such as RCSR);
+2. replace vertice with secondary building blocks(code for creating MOFs and COFs);
+3. functional properties simulations;
+4. Applications
+
 ---- THEORY OF STRUCTURE GENERATION ----
 
 !! book: Modern methods of crystal structure prediction. Chapter 1: Periodic-Graph Approaches in Crystal Structure Prediction
@@ -183,16 +192,25 @@ QReaxAA
 
 Application by the code:
 -- ToBaCCo code:
-13512 MOFs + hydrogen storage, methane storage, Xe/Kr separation(DOI: 10.1021/acs.cgd.7b00848)
-simulated adsorption, mechanical properties(DOI: 10.1039/C8CE01637B)
-18 000+ MOFs + hydrogen storage capabilities with neural network(DOI: 10.1021/acs.jpcc.8b09420)
-50000 experimental MOFs + hydrogen deliverable capacity(DOI: 10.1039/c8me00050f)
-electrostatic interactions(DOI: 10.1021/acs.jctc.7b00841)
-design smart MOFs for methane storage(DOI: 10.1039/c9me00072k)
-predicting adsorption isotherms(DOI: 10.1021/acs.jctc.9b00940)
+1. 13512 MOFs + hydrogen storage, methane storage, Xe/Kr separation(DOI: 10.1021/acs.cgd.7b00848)
+2. simulated adsorption, mechanical properties(DOI: 10.1039/C8CE01637B)
+3. 18000+ MOFs + hydrogen storage capabilities with neural network(DOI: 10.1021/acs.jpcc.8b09420)
+4. 50000 experimental MOFs + hydrogen deliverable capacity(DOI: 10.1039/c8me00050f)
+5. electrostatic interactions(DOI: 10.1021/acs.jctc.7b00841)
+6. design smart MOFs for methane storage(DOI: 10.1039/c9me00072k)
+7. predicting adsorption isotherms(DOI: 10.1021/acs.jctc.9b00940)
 
--- Zeo++
-Related to zeolite and porous structure: gas separation, adsorption
+-- Zeo++ software:
+1. MOFs structrue and applications
+2. Voronoi tessellation on crystalline porous material like zeolite(DOI: 10.1039/c3ce41057a)
+3. charaterize Geometric pore volume and Probe center pore volume(DOI: 10.1021/acs.langmuir.7b01682)
+4. describe the detailed porosity of a periodic system(DOI: 10.1021/acs.chemmater.6b02994)
+
+-- topoFF
+1. MOFs structure predictions 
+
+
+
 
 A realated book
 Modern Methods of Crystal Structure Prediction
@@ -212,6 +230,25 @@ Application
 6.design microstructures of two-phase composites with extremal electromagnetic permeability and permittivity(DOI: 10.1007/s00158-012-0766-8)
 7. topological optimization
 
+In discussion:
+whether the code can:
+1. produce fused ring when inserting secondary building blocks
+2. create heterogeneous ring
+
+direction:
+1. hyperbolic space materials
+(1) http://epinet.anu.edu.au 2D hyperbolic (H²) tilings(also a net database)
+(2) enumeration of hyperbolic tilings to create nets(DOI: 10.1016/j.solidstatesciences.2006.04.001)
+
+
+2. quasicrystal
+(1) clean surface of quasicrystal? 
+(2) 2D quasiperiodic tiling with 8-fold symmetry using cold atoms(DOI: 10.3390/cryst6100124)
+(3) Pseudo-disordered supercells result in different performance of solar cells.(DOI: 10.1364/OE.24.00A650)
+(4) New group theoretical methods for applications in virology and quasicrystals
+
+3. 2D but not planar material like MoS2
+4. defects in graphite
 
 
 
